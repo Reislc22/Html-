@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+<!-- form é usada para criar formularios -->
+    <form>
+<!-- Input é para o usuario escrever dentro, neste caso um texto (type=text) e 
+placeholder é para indicar dentro do campo oque se espera que o usuario bote no campo -->
+        <input type="text" placeholder="Seu Nome" />
+        <br />
+<!-- label é usado para indicar oque o usuario vai por só que antes ou depois do campo e o <for> 
+recebe o ID do campo, assim podendo selecionar ele apenas clicando em cima do nome. -->
+        <label for="email">Seu e-mail</label>
+<!-- id é para o <for> funcionar e ter uma referencia de onde vai selecionar -->
+        <input id="email" type="email"/>
+        <br />
+        <input type="tel" placeholder="Seu telefone" />
+        <br />
+<!-- no (type= number) só vai poder colocar numeros podendo definir o numero maximo
+com "max" e o minimo com "min" e tambem podendo pular a quantidade de numero que vai pular por vez com "step"-->
+        <input type="number" max="10" min="2" step="2"/>
+        <br />
+        <input type="file" />
+        <br />
+        <input type="color" />
+        <br />
+        <input id="checkbox-termos" type="checkbox" /> <label for="checkbox-termos">Aceito os termos</label>
+        <p>
+            Qual Seu Pokemon inicial favorito?
+        </p>
+<!-- Name é utilizado dentro do (type=radio) para quando tiver varias respostas para uma pergunta não dar bug
+e poder escolher só uma das respostas-->
+        <input id="Charmader" name="Pokemon inicial favorito" type="radio" /> <label for="Charmader" >Charmader</label>
+        <input id="Bulbasaur" name="Pokemon inicial favorito" type="radio" /> <label for="Bulbasaur">Bulbasaur</label>
+        <input id="Squirtle"  name="Pokemon inicial favorito" type="radio" /> <label for="Squirtle">Squirtle</label>
+        <br />
+        <label>Qual seu pokemon lendario favorito?</label>
+<!-- select é para criar caixinha de escolha e multiple adicionado junto é para deixar a caixanha aberta , podendo até selecionar multiplos -->
+        <select multiple>
+<!-- Option é para criar as opções dentro da caixinha criada por "select" -->
+            <option>Articuno</option>
+            <option>Moltres</option>
+            <option>Zapdos</option>
+        </select>
+        <br />
+        <br />
+<!-- Textarea cria um local para botar o texpo expandivel, bom para texto grandes ou feedbacks -->
+        <textarea></textarea>
+<!-- button é para criar um botão no caso do (button=submit) é para enviar -->
+        <button type="submit">
+            Enviar
+        </button>
+<!-- type=reset serve para limpar e/ou resetar as opções -->
+        <button type="reset">
+            Limpar
+        </button>
+    </form>
+    <nav>
+        <a href="./index.html">Home</a>
+    </nav>
+</body>
+</html>
